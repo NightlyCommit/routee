@@ -64,6 +64,7 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#executorparameters" class="tsd-kind-icon">Executor<wbr>Parameters</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#routeexecutor" class="tsd-kind-icon">Route<wbr>Executor</a></li>
 								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#routeinterface" class="tsd-kind-icon">Route<wbr>Interface</a></li>
 							</ul>
@@ -82,12 +83,28 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
-					<a name="routeexecutor" class="tsd-anchor"></a>
-					<h3>Route<wbr>Executor</h3>
-					<div class="tsd-signature tsd-kind-icon">Route<wbr>Executor&lt;P, S&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExecutorParameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<a name="executorparameters" class="tsd-anchor"></a>
+					<h3>Executor<wbr>Parameters</h3>
+					<div class="tsd-signature tsd-kind-icon">Executor<wbr>Parameters&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">SanitizeRouteParameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:5</li>
+							<li>Defined in index.ts:4</li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="routeexecutor" class="tsd-anchor"></a>
+					<h3>Route<wbr>Executor</h3>
+					<div class="tsd-signature tsd-kind-icon">Route<wbr>Executor&lt;P, D&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">: </span><a href="modules.html#executorparameters" class="tsd-signature-type">ExecutorParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in index.ts:6</li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -96,7 +113,7 @@
 							<h4>P<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li>
-							<h4>S<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4>D<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 					<div class="tsd-type-declaration">
@@ -104,17 +121,17 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-signature">
 								<ul class="tsd-signatures tsd-kind-type-literal">
-									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExecutorParameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span>, state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>parameters<span class="tsd-signature-symbol">: </span><a href="modules.html#executorparameters" class="tsd-signature-type">ExecutorParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span>, data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
 									<li class="tsd-description">
 										<h4 class="tsd-parameters-title">Parameters</h4>
 										<ul class="tsd-parameters">
 											<li>
-												<h5>parameters: <span class="tsd-signature-type">ExecutorParameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h5>
+												<h5>parameters: <a href="modules.html#executorparameters" class="tsd-signature-type">ExecutorParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 											<li>
-												<h5>state: <span class="tsd-signature-type">S</span></h5>
+												<h5>data: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
 											</li>
 										</ul>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -127,10 +144,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
 					<a name="routeinterface" class="tsd-anchor"></a>
 					<h3>Route<wbr>Interface</h3>
-					<div class="tsd-signature tsd-kind-icon">Route<wbr>Interface&lt;Segments, State&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>executor<span class="tsd-signature-symbol">: </span><a href="modules.html#routeexecutor" class="tsd-signature-type">RouteExecutor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Segments</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">State</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>segments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Segments</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Route<wbr>Interface&lt;Segments, Data&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>executor<span class="tsd-signature-symbol">: </span><a href="modules.html#routeexecutor" class="tsd-signature-type">RouteExecutor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Segments</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>segments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Segments</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in index.ts:7</li>
+							<li>Defined in index.ts:8</li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -139,14 +156,14 @@
 							<h4>Segments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 						<li>
-							<h4>State<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span> = <span class="tsd-signature-type">undefined</span></h4>
+							<h4>Data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span> = <span class="tsd-signature-type">undefined</span></h4>
 						</li>
 					</ul>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5>executor<span class="tsd-signature-symbol">: </span><a href="modules.html#routeexecutor" class="tsd-signature-type">RouteExecutor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Segments</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">State</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<h5>executor<span class="tsd-signature-symbol">: </span><a href="modules.html#routeexecutor" class="tsd-signature-type">RouteExecutor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Segments</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Data</span><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
@@ -164,13 +181,13 @@
 					<a name="createurl" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> createURL</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">createURL&lt;P&gt;<span class="tsd-signature-symbol">(</span>route<span class="tsd-signature-symbol">: </span><a href="modules.html#routeinterface" class="tsd-signature-type">RouteInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span>, parameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ExecutorParameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">createURL&lt;P&gt;<span class="tsd-signature-symbol">(</span>route<span class="tsd-signature-symbol">: </span><a href="modules.html#routeinterface" class="tsd-signature-type">RouteInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span>, parameters<span class="tsd-signature-symbol">: </span><a href="modules.html#executorparameters" class="tsd-signature-type">ExecutorParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:62</li>
+									<li>Defined in index.ts:63</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -190,7 +207,7 @@
 									<h5>route: <a href="modules.html#routeinterface" class="tsd-signature-type">RouteInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>parameters: <span class="tsd-signature-type">ExecutorParameters</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>parameters: <a href="modules.html#executorparameters" class="tsd-signature-type">ExecutorParameters</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
@@ -209,7 +226,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:86</li>
+									<li>Defined in index.ts:87</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -233,13 +250,13 @@
 					<a name="registerroute" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> register<wbr>Route</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">register<wbr>Route&lt;P, S&gt;<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, segments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span>, executor<span class="tsd-signature-symbol">: </span><a href="modules.html#routeexecutor" class="tsd-signature-type">RouteExecutor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#routeinterface" class="tsd-signature-type">RouteInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">register<wbr>Route&lt;P, D&gt;<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, segments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span>, executor<span class="tsd-signature-symbol">: </span><a href="modules.html#routeexecutor" class="tsd-signature-type">RouteExecutor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#routeinterface" class="tsd-signature-type">RouteInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in index.ts:40</li>
+									<li>Defined in index.ts:41</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -253,7 +270,7 @@
 									<h4>P</h4>
 								</li>
 								<li>
-									<h4>S</h4>
+									<h4>D</h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -265,12 +282,12 @@
 									<h5>segments: <span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>executor: <a href="modules.html#routeexecutor" class="tsd-signature-type">RouteExecutor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>executor: <a href="modules.html#routeexecutor" class="tsd-signature-type">RouteExecutor</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h5>
 									<div class="tsd-comment tsd-typography">
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="modules.html#routeinterface" class="tsd-signature-type">RouteInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#routeinterface" class="tsd-signature-type">RouteInterface</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Keys</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">D</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -286,6 +303,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#executorparameters" class="tsd-kind-icon">Executor<wbr>Parameters</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="modules.html#routeexecutor" class="tsd-kind-icon">Route<wbr>Executor</a>
 					</li>
