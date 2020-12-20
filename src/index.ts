@@ -1,13 +1,14 @@
 type SanitizeRouteParameters<T> = T extends Record<infer K, any> ? ([K] extends [never] ? Record<string, never> : Record<K, string>) : T;
-type ExecutorParameters<T extends Array<string>> = SanitizeRouteParameters<Record<T[number], string>>;
 type Keys<O> = Array<keyof O & string>;
 
-export type RouteExecutor<P extends Array<string>, S extends Record<any, any>> = (parameters: ExecutorParameters<P>, state: S) => void;
+export type ExecutorParameters<T extends Array<string>> = SanitizeRouteParameters<Record<T[number], string>>;
 
-export type RouteInterface<Segments extends Array<string>, State extends Record<string, any> = undefined> = {
+export type RouteExecutor<P extends Array<string>, D extends Record<any, any>> = (parameters: ExecutorParameters<P>, data: Partial<D>) => void;
+
+export type RouteInterface<Segments extends Array<string>, Data extends Record<string, any> = undefined> = {
   id: string;
   segments: Segments;
-  executor: RouteExecutor<Segments, State>;
+  executor: RouteExecutor<Segments, Data>;
 };
 
 const getRoutePattern = <P extends Array<string>>(route: RouteInterface<P>): string => {
@@ -37,11 +38,11 @@ const routes: Map<string, RouteInterface<Array<string>, Record<string, any>>> = 
  * @param segments
  * @param executor
  */
-export const registerRoute = <P, S>(
+export const registerRoute = <P, D>(
   id: string,
   segments: Keys<P> | Array<undefined>,
-  executor: RouteExecutor<Keys<P> | Array<undefined>, S>
-): RouteInterface<Keys<P>, S> => {
+  executor: RouteExecutor<Keys<P> | Array<undefined>, D>
+): RouteInterface<Keys<P>, D> => {
   const route = {
     id,
     segments,
